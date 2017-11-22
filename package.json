@@ -2,6 +2,7 @@
   "name": "blog_post",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mayoorpatil.github.io/blog_post",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.1.0",
