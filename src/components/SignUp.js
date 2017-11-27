@@ -64,7 +64,7 @@ class SignUp extends Component {
     success: (response) => {
       this.setState({user: response.user});
       store.user = response.user
-      this.props.history.push('/sign-in');
+      this.props.history.push('/blog_post/sign-in');
       $('#sign-up-toggle-text, #sign-up-toggle').addClass('hidden');
     }
   })

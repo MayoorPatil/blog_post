@@ -42,7 +42,7 @@ onChangePassword(e) {
     },
   data: data,
   success: (response) => {
-    this.props.history.push('/');
+    this.props.history.push('/blog_post');
   }
 })
 }
