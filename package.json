@@ -4,15 +4,20 @@
   "private": true,
   "homepage": "https://mayoorpatil.github.io/blog_post",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gh-pages": "^1.1.0",
+    "jquery": "^3.2.1",
     "react": "^16.1.0",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.0",
+    "react-router-bootstrap": "^0.23.3",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "PORT=7165 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
