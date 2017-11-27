@@ -8,7 +8,7 @@ class SignOut extends Component {
   componentDidMount () {
     console.log('what is this.props....', this.props)
     $.ajax({
-      url: 'http://localhost:4741/sign-out/' + store.user.id,
+      url: 'https://mayoor-capstone-rails-api.herokuapp.com/sign-out/' + store.user.id,
       method: 'DELETE',
       headers: {
         Authorization: 'Token token=' + store.user.token

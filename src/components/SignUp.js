@@ -57,7 +57,7 @@ class SignUp extends Component {
     let data = {};
     data['credentials'] = this.state.credentials
     $.ajax({
-    url: 'http://localhost:4741/sign-up',
+    url: 'https://mayoor-capstone-rails-api.herokuapp.com/sign-up',
     method: 'POST',
     data: data,
     success: (response) => {

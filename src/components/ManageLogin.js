@@ -55,7 +55,7 @@ class ManageLogin extends Component {
       let data = {};
       data['credentials'] = this.state.credentials
       $.ajax({
-      url: 'http://localhost:4741/sign-in',
+      url: 'https://mayoor-capstone-rails-api.herokuapp.com/sign-in',
       method: 'POST',
       data: data,
       success: (response) => {

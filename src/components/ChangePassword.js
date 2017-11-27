@@ -34,7 +34,7 @@ onChangePassword(e) {
   data.passwords['old'] = this.state.old;
   data.passwords['new'] = this.state.new;
   $.ajax({
-  url: 'http://localhost:4741/change-password/' + store.user.id,
+  url: 'https://mayoor-capstone-rails-api.herokuapp.com/change-password/' + store.user.id,
   method: 'PATCH',
   headers: {
       Authorization: 'Token token=' + store.user.token
