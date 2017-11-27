@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LoginForm from './LoginForm.js';
 import $ from 'jquery';
 const store = require('../store');
+const apiOrigin = require('../config');
 
 class ManageLogin extends Component {
   constructor(props) {
@@ -55,7 +56,7 @@ class ManageLogin extends Component {
       let data = {};
       data['credentials'] = this.state.credentials
       $.ajax({
-      url: 'https://mayoor-capstone-rails-api.herokuapp.com/sign-in',
+      url: apiOrigin() + '/sign-in',
       method: 'POST',
       data: data,
       success: (response) => {

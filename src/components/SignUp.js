@@ -3,6 +3,7 @@ import '../App.css';
 import $ from 'jquery';
 import TextInput from './TextInput.js';
 const store = require('../store');
+const apiOrigin = require('../config');
 
 class SignUp extends Component {
   constructor(props) {
@@ -57,7 +58,7 @@ class SignUp extends Component {
     let data = {};
     data['credentials'] = this.state.credentials
     $.ajax({
-    url: 'https://mayoor-capstone-rails-api.herokuapp.com/sign-up',
+    url: apiOrigin() + '/sign-up',
     method: 'POST',
     data: data,
     success: (response) => {

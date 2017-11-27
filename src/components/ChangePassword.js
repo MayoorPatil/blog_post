@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.css';
 import $ from 'jquery';
 const store = require('../store');
+const apiOrigin = require('../config');
 
 class ChangePassword extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ onChangePassword(e) {
   data.passwords['old'] = this.state.old;
   data.passwords['new'] = this.state.new;
   $.ajax({
-  url: 'https://mayoor-capstone-rails-api.herokuapp.com/change-password/' + store.user.id,
+  url: apiOrigin() + '/change-password/' + store.user.id,
   method: 'PATCH',
   headers: {
       Authorization: 'Token token=' + store.user.token
